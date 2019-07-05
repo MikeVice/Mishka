@@ -1,0 +1,43 @@
+@mixin list-style-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin pseudo-element($width, $heigth, $top, $left) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $heigth;
+  top: $top;
+  left: $left;
+}
+
+@mixin pseudo-element-right($width, $heigth, $top, $right) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $heigth;
+  top: $top;
+  right: $right;
+}
+
+@mixin mobile-secondary-title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+@mixin visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,0 +1,158 @@
+.contacts {
+  padding-bottom: 38px;
+}
+
+.contacts__title {
+  @include mobile-secondary-title;
+  margin-bottom: 38px;
+  font-size: 18px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__text,
+.contacts__actions {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.contacts__map {
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.contacts__email {
+  display: flex;
+  margin-bottom: 38px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.contacts__adress {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.contacts__legend {
+  margin: 0;
+  margin-right: 26px;
+}
+
+.contacts__email-data {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 1px solid $main-color;
+
+  &:hover {
+    color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__adress-data {
+  width: 150px;
+  margin: 0;
+}
+
+.contacts__text {
+  margin-bottom: 43px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    padding-top: 70px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+  }
+
+  .contacts__text,
+  .contacts__actions {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .contacts__map {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .contacts__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .contacts__title {
+      width: 100%;
+    }
+
+    .contacts__email,
+    .contacts__adress {
+      width: 334px;
+    }
+  }
+
+  .contacts__adress-data {
+    width: 175px;
+  }
+
+  .contacts__button {
+    width: 231px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contacts__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .contacts__text {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    padding-left: 175px;
+    width: 525px;
+
+    .contacts__title {
+      width: 100%;
+    }
+  }
+
+  .contacts__actions {
+    margin: 0;
+    margin-left: 145px;
+    margin-top: -65px;
+    width: auto;
+  }
+
+  .contacts__map {
+    width: 525px;
+    margin: 0;
+  }
+}
